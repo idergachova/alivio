@@ -1,57 +1,7 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-img{
-    max-width: 100%;
-    display: inline-block;
-}
-
-html, 
-body{
-    min-height: 100%;
-    background-color: #D6D6D6;
-}
-
-:root {
-    --font-main: "Lato", sans-serif;
-    --font-add: "Poppins", sans-serif;
-    --white: #fff;
-    --black: #000;
-    --color-primary: #01996D;
-    --color-text-first: #484848;
-    --color-text-second: #292929;
-    --color-text-third: #424242;
-    --btn-radius: 4px;
-}
-
-.wrapper {
-    max-width: 1920px;
-    margin-inline: auto;
-    background-color: var(--white);
-    position: relative;
-}
-
-body {
-    font-family: var(--font-main);
-}
-
 /* Header */
 
 .header {
     border-bottom: 1px solid #D6D6D6;
-}
-
-.container {
-    max-width: 1507px;
-    width: 100%;
-    margin-inline: auto;
 }
 
 .header__container {
@@ -80,30 +30,12 @@ body {
     align-items: center;
 }
 
-.btn {
-    display: inline-block;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
-    font-size: 20px;
-    font-family: var(--font-main);
-}
-
 .btn_link {
     color: var(--black);
 }
 
-.btn_primary {
-    color: var(--white);
-    font-weight: 400;
-    line-height: 25px;
-    border-radius: var(--btn-radius);
-    border: 1px solid var(--color-primary);
-    background: var(--color-primary);
-    padding: 13px 50px;
-}
-
 /* Header END */
+
 
 /* Welcome section */
 
@@ -124,11 +56,6 @@ body {
 }
 
 .welcome__desc {
-    color: var(--color-text-first);
-    font-size: 20px;
-    font-family: var(--font-main);
-    font-weight: 400;
-    line-height: 157%;
     max-width: 420px;
     margin-bottom: 53px;
 }
@@ -138,21 +65,22 @@ body {
 }
 
 .welcome__img {
-    min-height: 902px;
+    position: relative;
+    left: inherit;
 }
 
-.img__container{
-    position: absolute;
-    top: 82px;
-    left: 1128px;
+.welcome__img_small{
+    display: none;
+
 }
 
 /* Welcome section END*/
 
+
 /* How section */
 
 .how__container {
-    padding: 169px 58px 392px;
+    padding: 203px 58px;
 }
 
 .how-info {
@@ -163,33 +91,15 @@ body {
 }
 
 .how-info__title {
-    color: var(--color-text-third);
-    font-size: 24px;
-    font-family: var(--font-main);
-    font-weight: 600;
-    line-height: 157%;
-}
-
-.how-info__slogan {
-    color: var(--color-primary);
-    font-size: 50px;
-    font-family: var(--font-add);
-    font-weight: 700;
-    line-height: 157%;
     max-width: 579px;
 }
 
 .how-info__desc {
     color: var(--color-text-third);
-    font-size: 20px;
-    font-family: var(--font-main);
-    font-weight: 500;
-    line-height: 150%;
     max-width: 671px;
-    margin-top: 52px;
 }
 
-.how-step{
+.how-step {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 68px;
@@ -212,17 +122,13 @@ body {
 
 .how-step__desc {
     color: var(--color-text-third);
-    font-size: 20px;
-    font-family: var(--font-main);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
     max-width: 382px;
     flex-grow: 1;
     margin-bottom: 60px;
 }
 
 /* How section END*/
+
 
 /* Story section */
 
@@ -233,28 +139,18 @@ body {
 .story__container {
     display: flex;
     gap: 31px;
-    padding-top: 229px;
-    padding-bottom: 177px;
+    padding: 203px 0px;
 }
 
-.story__slogan {
+.story__title {
     color: var(--white);
-    font-size: 50px;
-    font-family: var(--font-add);
-    font-weight: 700;
-    line-height: 157%;
-    max-width: 580px;
     margin-bottom: 33px;
-    margin-top: 81px;
 }
 
-.story__desc {
+.story__topic {
     color: var(--white);
-    font-size: 25px;
-    font-family: var(--font-main);
-    font-weight: 600;
-    line-height: 157%;
     margin-bottom: 57px;
+
 }
 
 .story__btn {
@@ -263,33 +159,24 @@ body {
 
 /* Story section END*/
 
+
 /* Product section */
 
 .product__container {
     display: flex;
     gap: 87px;
-    padding: 120px 104px 243px 104px;
+    padding: 203px 104px;
 }
 
-.product__img {
-    min-width: 639px;
+.product__img img{
+    max-width: 639px;
 }
 
 .product__title {
-    color: var(--color-text-third);
-    font-size: 25px;
-    font-family: var(--font-main);
-    font-weight: 600;
-    line-height: 157%;
     margin-bottom: 10px;
 }
 
-.product__slogan {
-    color: var(--color-primary);
-    font-size: 50px;
-    font-family: var(--font-add);
-    font-weight: 700;
-    line-height: 157%;
+.product__topic {
     margin-bottom: 20px;
     max-width: 573px;
 }
@@ -309,6 +196,7 @@ padding: 20px 50px;
 }
 
 /* Product section END */
+
 
 /* Footer */
 

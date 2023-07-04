@@ -1,0 +1,280 @@
+@media screen and (max-width: 1520px) {
+
+    .story__container{
+        padding: 200px 30px 144px 30px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+   .welcome__title{
+        font-size: 60px;
+   }
+
+    .desc, .header__a, .btn {
+        font-size: 18px;
+    }
+    
+    .topic, .footer__a {
+        font-size: 20px;
+    }
+    
+    .title {
+        font-size: 46px;
+    }
+
+    .how-step__title{
+        font-size: 24px;
+    }
+
+    .welcome__img{
+        left: inherit;
+    }
+
+    .footer__ul{
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .welcome__img {
+        display: none;
+    }
+    
+    .welcome__img_small{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .welcome__img_small img{
+        width: 100%;
+    }
+
+    .welcome__container{
+        flex-direction: column-reverse;
+    }
+    
+    .welcome__title, .welcome__desc, .how-info__title, .how-info__desc {
+        max-width: 100%;
+    }
+
+    .welcome__info{
+        padding-top: 40px;
+    }
+
+    .how__container{
+        padding: 150px 30px;
+    }
+
+    .how-info {
+        flex-direction: column;        
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .story__container{
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .story__container, .product__container{
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+    }
+
+    .story__title {
+        margin-bottom: 24px;
+    }
+
+   .story__topic {
+        margin-bottom: 40px;
+    }
+
+    .story__img{
+        margin: 0 auto;
+    }
+
+    .story__info{
+       padding: 0px 123px; 
+    }   
+    
+    .how-step__desc {
+        font-size: 16px;
+    }
+
+    .header__btn{
+        display: none;
+    }
+
+    .header__container {
+        padding: 30px 30px;
+    }
+    
+    .header {
+        height: 85px;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        background: var(--white);
+    }
+
+    main{
+        padding-top: 85px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .product__container{
+        flex-direction: column-reverse;
+        gap: 48px;
+    }
+
+  .product__title, .product__desc{
+        max-width: 100%;
+    }
+
+    .story__info{
+        padding: 0px 30px; 
+     }
+}
+
+@media screen and (max-width: 900px) {
+    #burger {
+        display: inline-block;
+    }
+
+    .header__ul{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        background: var(--color-primary);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-120%);
+        transition: .2s all ease-in-out;
+    }
+
+    .header__ul._active {
+        transform: translateX(0);
+    }
+
+    .header__a{
+        color: var(--white);
+        font-size: 26px
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .welcome__title{
+        font-size: 52px;
+    }
+
+    .how__container{
+        padding: 120px 30px;
+    }
+
+   .how-info__title{
+        max-width: 650px;
+    }
+    .story__container, .product__container{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .how-step{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .how-step__desc {
+        margin-bottom: 30px;
+        } 
+
+    .story__info{
+        padding: 0;
+     }
+
+     .product__img img{
+        width: 100%;
+    }
+
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    .footer__a {
+        font-size: 18px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .welcome__title{
+        font-size: 48px;
+    }
+
+    .topic {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .how-step{
+        grid-template-columns: 1fr;
+    }
+
+    .how-step__desc {
+        max-width: 100%;
+    }
+    
+    .story__container, .product__container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+    }
+    .how-info {
+        margin-bottom: 50px;
+    }
+
+    .how-step__title {
+        font-size: 20px;
+    }
+
+    .how-step__img img {
+        width: 100%;
+    }
+
+    .footer__ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+    }
+
+}
